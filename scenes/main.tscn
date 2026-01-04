@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://b5ojrtkom6jqe"]
+[gd_scene load_steps=2 format=3 uid="uid://b5ojrtkom6jqe"]
+
+[ext_resource type="PackedScene" uid="uid://bwxnojwxyh6ck" path="res://chars/ralsei/ralsei.tscn" id="1_o5qli"]
 
 [node name="main" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(0.996667, 1)
+zoom = Vector2(4, 4)
+
+[node name="ralsei" parent="." instance=ExtResource("1_o5qli")]
