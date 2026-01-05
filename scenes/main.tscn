@@ -1,11 +1,59 @@
-[gd_scene load_steps=2 format=3 uid="uid://b5ojrtkom6jqe"]
+[gd_scene load_steps=3 format=3 uid="uid://b5ojrtkom6jqe"]
 
+[ext_resource type="Script" uid="uid://u7a71ov382ht" path="res://scenes/windowresize.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://bwxnojwxyh6ck" path="res://chars/ralsei/ralsei.tscn" id="1_o5qli"]
 
 [node name="main" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-scale = Vector2(0.996667, 1)
-zoom = Vector2(4, 4)
+[node name="Window2" type="Window" parent="."]
+auto_translate_mode = 1
+transparent_bg = true
+title = "Ralsei"
+position = Vector2i(357, 213)
+size = Vector2i(285, 265)
+unresizable = true
+borderless = true
+always_on_top = true
+transparent = true
+sharp_corners = true
+script = ExtResource("1_0wfyh")
 
-[node name="ralsei" parent="." instance=ExtResource("1_o5qli")]
+[node name="ralsei" parent="Window2" instance=ExtResource("1_o5qli")]
+texture_filter = 1
+position = Vector2(63, 120)
+scale = Vector2(4, 4)
+
+[node name="Window3" type="Window" parent="."]
+auto_translate_mode = 1
+transparent_bg = true
+title = "Ralsei"
+position = Vector2i(357, 213)
+size = Vector2i(285, 265)
+unresizable = true
+borderless = true
+always_on_top = true
+transparent = true
+sharp_corners = true
+script = ExtResource("1_0wfyh")
+
+[node name="ralsei" parent="Window3" instance=ExtResource("1_o5qli")]
+texture_filter = 1
+position = Vector2(63, 120)
+scale = Vector2(4, 4)
+
+[node name="Window" type="Window" parent="."]
+transparent_bg = true
+title = "Ralsei"
+position = Vector2i(233, 213)
+size = Vector2i(285, 265)
+unresizable = true
+borderless = true
+always_on_top = true
+transparent = true
+sharp_corners = true
+script = ExtResource("1_0wfyh")
+
+[node name="ralsei" parent="Window" instance=ExtResource("1_o5qli")]
+texture_filter = 1
+position = Vector2(63, 120)
+scale = Vector2(4, 4)
