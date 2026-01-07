@@ -5,46 +5,10 @@
 
 [node name="main" type="Node2D"]
 
-[node name="Window2" type="Window" parent="."]
-auto_translate_mode = 1
-transparent_bg = true
-title = "Ralsei"
-position = Vector2i(357, 213)
-size = Vector2i(285, 265)
-unresizable = true
-borderless = true
-always_on_top = true
-transparent = true
-sharp_corners = true
-script = ExtResource("1_0wfyh")
-
-[node name="ralsei" parent="Window2" instance=ExtResource("1_o5qli")]
-texture_filter = 1
-position = Vector2(63, 120)
-scale = Vector2(4, 4)
-
-[node name="Window3" type="Window" parent="."]
-auto_translate_mode = 1
-transparent_bg = true
-title = "Ralsei"
-position = Vector2i(357, 213)
-size = Vector2i(285, 265)
-unresizable = true
-borderless = true
-always_on_top = true
-transparent = true
-sharp_corners = true
-script = ExtResource("1_0wfyh")
-
-[node name="ralsei" parent="Window3" instance=ExtResource("1_o5qli")]
-texture_filter = 1
-position = Vector2(63, 120)
-scale = Vector2(4, 4)
-
 [node name="Window" type="Window" parent="."]
 transparent_bg = true
 title = "Ralsei"
-position = Vector2i(233, 213)
+position = Vector2i(1083, 213)
 size = Vector2i(285, 265)
 unresizable = true
 borderless = true

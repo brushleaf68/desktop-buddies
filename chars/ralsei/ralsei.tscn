@@ -161,5 +161,7 @@ animations = [{
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_2upsg")
 animation = &"emote2"
-autoplay = "emote2"
+autoplay = "walk"
+frame = 2
+frame_progress = 0.83052
 script = ExtResource("28_s7c3v")
